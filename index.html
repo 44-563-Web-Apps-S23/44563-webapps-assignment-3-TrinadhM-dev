@@ -4,7 +4,14 @@
 <title>HTML assignment</title>
 </head>
 <body>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
 
+
+<a href="../44563-webapps-assignment-3-TrinadhM-dev/bonus.html">Bonus Link</a>
 <h1 style="text-align: center;">Trinadh Machanavazzala</h1>
 
 <h3 style="text-align: center;">Cricket </h3>
@@ -22,15 +29,94 @@
     <li>Rohit Sharma</li>
     <li>Ishan Kishan</li>
     <li>Sky</li>
-    <ul>
+    <ol>
         <li>Chennai Super kings</li>
         <li>Delhi Dare Devils</li>
         <li>Sydney Sixers</li>
         <li>Sydney Thunders</li>
         <li>Perth Scrochers</li>
-</ul>
+</ol>
 </ol>
 
-<a href="aboutme.html" style="align-items: center; display: center;">About Me</a>
+<ul>
+    <li>Pune warriors</li>
+    <li>Kochi tuskers</li>
+    <li>Deccan Charges</li>
+</ul>
+<b>Click Here For the Page </b><a href="aboutme.html" style="align-items: center; display: center;">About Me</a>
+<hr>
+<h3>Let's Explore</h3>
+<p>
+    Travel gives us the greatest stories, our most cherished memories and countless irreplaceable learnings that we can choose to pay forward to others. It teaches us about ourselves and each other, it broadens our horizons and, just like a reset button, it forces us to refocus on what really matters in our life. these are some of the places that every one has crave towards travel.
+</p>
+
+
+
+<table style='border: 1px solid black'>
+    <tr>
+      <th>Country Name</th>
+      <th>Description</th>
+      <th>Days</th>
+    </tr>
+    <tr>
+      <td>United States</td>
+      <td>tremendous weather and touristic places</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Thailand</td>
+      <td>Known for an unique culture</td>
+      <td>7</td>
+    </tr>
+    <tr>
+        <td>Spain</td>
+        <td>Known for tourism</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>Swizterland</td>
+        <td>Known for  Rhine Falls </td>
+        <td>7</td>
+      </tr>
+  </table>
+  <hr>
+  <h1> PRE Formatting Section</h1>
+  <blockquote>Do you want to the more details?</blockquote>
+  <a href="https://stackoverflow.com/questions/31651603/mixins-gradient-for-ie8">
+stackoverflow link for SASS
+</a>
+  <pre>
+    /// Stripe builder
+/// @author Kitty Giraudel
+/// @param {Direction} $direction - Gradient direction
+/// @param {List} $colors - List of colors
+/// @output `background-image` if several colors, `background-color` if only one
+@mixin stripes($direction, $colors) {
+$length: length($colors);
+
+@if $length > 1 {
+$stripes: ();
+
+@for $i from 1 through $length {
+  $stripe: (100% / $length) * ($i - 1);
+  
+  @if $i > 1 {
+    $stripes: append($stripes, nth($colors, $i - 1) $stripe, comma);
+  }
+  
+  $stripes: append($stripes, nth($colors, $i) $stripe, comma);
+}
+
+background-image: linear-gradient($direction, $stripes);
+} @else if $length == 1 {
+background-color: $colors;
+}
+}
+  </pre>
+  <b> Striped Gradient Mixin in SASS </b>
+<a href="https://css-tricks.com/snippets/sass/striped-gradient-mixin/">Link here for the link </a>
+<br>
+<br>
+ 
 </body>
 </html>
